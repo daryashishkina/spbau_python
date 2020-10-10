@@ -14,7 +14,7 @@ import matplotlib.pyplot as mpp
 if __name__=='__main__':
     arguments = numpy.r_[0:200:0.1]  #точки от 0 до 200 с шагом 0.1
     mpp.plot(   #соединяет точки линией
-        arguments,   
+        arguments,
         [math.cos(a) * math.tan(a/2.0) for a in arguments]  #функция
     )
     mpp.show()  #выводит график
