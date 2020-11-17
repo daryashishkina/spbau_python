@@ -20,8 +20,7 @@ def draw_fractal(size):
         
 size = 120
 
-tl.delay(1)  # уменьшение задержки для скорости
-tl.speed(0)
+tl.delay(1)
 tl.penup()
 tl.color('orange')
 tl.bgcolor('black')
