@@ -6,11 +6,14 @@
 
 {% block content %}
 <h2>А вы и правда любитель математики!</h2>
+<h3>Введите число!</h3>
 
 <p></p>
 
 <form action="/test" method="GET">
-  <input type="text" value="{{name}}" name="name" />
+  <input type="number" value="{{name}}" name="name" />
   <input type="submit" value="Get!">
 </form>
+
+<p>Ваше число {{name}}</p>
 {% endblock %}
