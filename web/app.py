@@ -24,18 +24,18 @@ def test():
     if request.method == 'GET':
         n=request.args.get('name')
     if n==None:
-        n="Хочу число"
+        n=""
     else:
         n=int(n)
         if (math.factorial(n-1)+1) % n!=0:
-            return flask.render_template(
+            return render_template(
         'test.html',
         name="составное")
         else:
-            return flask.render_template(
+            return render_template(
         'test.html',
         name="простое")
-    return flask.render_template(
+    return render_template(
         'test.html',
         name=n)
 
